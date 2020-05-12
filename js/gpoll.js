@@ -4,8 +4,8 @@
 
     gpoll.init = function (){
         strings = gpoll_strings;
-        resultsButton = '<a href="javascript:void(0)" class="gpoll_button">' + strings.viewResults + '</a><div class="gpoll_summary"></div>';
-        backButtonMarkup = '<a href="javascript:void(0)" class="gpoll_back_button" style="display:none;">' + strings.backToThePoll + '</a>';
+        resultsButton = '<a class="gpoll_button">' + strings.viewResults + '</a><div class="gpoll_summary"></div>';
+        backButtonMarkup = '<a class="gpoll_back_button" style="display:none;">' + strings.backToThePoll + '</a>';
 
         // Gravity Forms 2.0 adds _wrapper to the wrapper classes
         $(".gform_wrapper.gpoll_enabled form, .gform_wrapper.gpoll_enabled_wrapper form").each(function(){
